@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/Stephanie8726/cse341#readme",
   "dependencies": {
+    "body": "^5.1.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
-    "mongodb": "^6.16.0"
+    "mongodb": "^6.16.0",
+    "parser": "^0.1.4"
   }
 }
