@@ -4,7 +4,7 @@
   "description": "My Project",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm start"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,8 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mongodb": "^6.16.0",
-    "parser": "^0.1.4"
+    "parser": "^0.1.4",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
   }
 }
