@@ -5,7 +5,7 @@ GET http://localhost:3000/contacts
 
 
 ### Get contact by id
-GET http://localhost:3000/contacts/68242013531be6111a71a671
+GET http://localhost:3000/contacts/682b0abea53338fa3f67845d
 
 
 ### Create contact
@@ -13,24 +13,25 @@ POST http://localhost:3000/contacts HTTP/1.1
 content-type: application/json
 
 {
-   "firstName": "Stephanie",
-   "lastName": "Selanoba",
-   "email": "stephanie.selanoba@gmail.com",
-   "favoriteColor": "blue",
-   "birthday": "1988-06-08",
+  "firstName": "Anne",
+  "lastName": "Curtisss",
+  "email": "ann.curtisss.com",
+  "favoriteColor": "gray",
+  "birthday": "1990-06-08"
 }
 
-### Update contact
-PUT http://localhost:3000/contacts/68242013531be6111a71a671 HTTP/1.1
+
+### PUT/UPDATE contact
+PUT http://localhost:3000/contacts/682c76f9ec6d51160e5fb91a HTTP/1.1
 content-type: application/json
 
 {
-  "firstName": "Stephanie",
-  "lastName": "Selanoba",
-  "email": "steph123@me.com",
-  "favoriteColor": "green",
-  "birthday": "1988-06-08"
+  "firstName": "Vice",
+  "lastName": "Gandahhh",
+  "email": "vg.com",
+  "favoriteColor": "grayish",
+  "birthday": "1980-06-08"
 }
 
 ### DELETE contact
-DELETE http://localhost:3000/contacts/68242013531be6111a71a671
+DELETE http://localhost:3000/contacts/682af4f22d90587a750fcbb7
