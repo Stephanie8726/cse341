@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const mongodb = require('./data/database');
 const app = express();
+const createError = require('http-errors'); // week 3
 
 const port = process.env.PORT || 3000
 
@@ -16,6 +17,23 @@ app.use((req, res, next) => {
     next();
 });
 app.use('/', require('./routes'));
+
+
+// 404 handler - must come after all routes
+app.use((req, res, next) => {
+    next(createError(404, 'Not found'));
+});
+
+// general error handler
+app.use((err, req, res, next) => {
+    res.status(err.status || 500).json({
+        error: {
+            status: err.status || 500,
+            message: err.message || 'Internal Server Error'
+        }
+    });
+});
+
 
 mongodb.initDb((err) => {
     if(err) {
